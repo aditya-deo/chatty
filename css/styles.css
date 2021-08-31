@@ -18,6 +18,12 @@
     padding-right: 2%;
 }
 
+.new-user-joined{
+    background-color: hotpink;
+}
+
+
+
 .right{
     float: right;
     clear: both;
