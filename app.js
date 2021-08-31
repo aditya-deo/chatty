@@ -3,7 +3,7 @@ const users = {};
 
 io.on("connection", function(socket){
     socket.on('new-user-joined', name=>{
-        console.log(name + " joined the chat.");
+        // console.log(name + " joined the chat.");
         users[socket.id] = name;
         socket.broadcast.emit('user-joined', name);
     });

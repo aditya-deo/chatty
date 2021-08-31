@@ -36,5 +36,5 @@ socket.on('receive', data=>{
 })
 
 socket.on('leave', data=>{
-    append(`${data.name} left you. He'll go to hell.`, 'right');
+    append(`${data.name} left you. They'll go to hell.`, 'right');
 })
