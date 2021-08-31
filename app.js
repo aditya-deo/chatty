@@ -12,4 +12,10 @@ io.on("connection", function(socket){
     socket.on('send', message=>{
         socket.broadcast.emit('receive', {message: message, name: users[socket.id]});
     });
+
+
+    socket.on('disconnect', message=>{
+        socket.broadcast.emit('leave', {name: users[socket.id]});
+        delete users[socket.id];
+    });
 })
